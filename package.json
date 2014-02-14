@@ -1,0 +1,11 @@
+{
+  "name": "NodeSquare",
+  "description": "Nodesquare test app",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.0.4",
+    "mongoose": "3.5.2",
+    "node-foursquare-2": "0.1.5"
+  }
+}

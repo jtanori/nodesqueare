@@ -1,0 +1,17 @@
+doctype 5
+html(lang="en")
+  head
+    title= pageTitle
+  body
+    h1 NodeSquare
+    #container
+      - if ( response == 'success' )
+        p Welcome #{userName}
+      - else
+        case error
+          when 'user-not-logged-in'
+            p You're nto logged in, please 
+              a(href='/index.html') try the login page
+          when 'default'
+            p Something went wrong :( please
+              a(href='/index.html') try the login page

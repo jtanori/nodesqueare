@@ -1,0 +1,14 @@
+doctype 5
+html(lang="en")
+  head
+    title= pageTitle
+    if (success)
+    meta(http-equiv="refresh", content="3; url=/user")
+  body
+    h1 NodeSquare
+    #container
+      if success
+        p Success on loggin you in #{userName}, we're redirecting you to the awesome user page
+      else
+        p Something went wrong :( please
+        a(href='/index.html') try the login page
